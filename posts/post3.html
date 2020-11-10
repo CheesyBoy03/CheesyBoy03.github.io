@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Главная страница</title>
     <link rel="stylesheet" href="../static/sass/dist/header.css">
-    <link rel="stylesheet" href="static/sass/dist/burger-menu.css">
+    <link rel="stylesheet" href="../static/sass/dist/burger-menu.css">
     <link rel="stylesheet" href="../static/sass/dist/main.css">
     <link rel="stylesheet" href="../static/sass/dist/for_all.css">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <div class="container">
+        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+        <input id="toggle" type="checkbox">
+        
+        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+        
+        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+        <label class="toggle-container" for="toggle">
+        <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+        <span class="button button-toggle"></span>
+        </label>
+        
+        <!-- Навигация -->
+        <nav class="nav">
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="index.html">Главная</a>
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="stepByStep.html">Шаг в шаг</a>
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="contacts.html">Контакты</a>
+        </nav>
+    </div>
+    <header class="header fixed-header">
         <div class="logo">
-            <a href="../main.html"><h1>Website by Yan</h1></a>
+            <a href="index.html"><h1>Website by Yan</h1></a>
         </div>
         <nav>
-            <a href="../main.html" class="nav__link">Главная</a>
-            <a href="../stepByStep.html" class="nav__link central_link">Шаг за шагом</a>
-            <a href="../contacts.html" class="nav__link">Контакты</a>
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="stepByStep.html" class="nav__link central_link">Шаг за шагом</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
         </nav>
-
-        <div class="menu__burger" onclick="openMenu()">
-            &#9776;
-        </div>
     </header>
 
-    <div class="container">
-        <h1>Первый пост</h1>
-
+    <div class="section">
+        <h2>Первый пост</h2>
     </div>
 </body>
 </html>
