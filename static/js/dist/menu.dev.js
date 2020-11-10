@@ -1,12 +1,10 @@
 "use strict";
 
-var menu = document.querySelector('.navigation');
-var close_menu = document.querySelector('.close-menu');
-close_menu.addEventListener("click", function (item) {
-  item.target.classList.add('open-menu');
-  item.target.classList.remove('close-menu');
-});
+var menu_is_open = Boolean(document.querySelector('.open-menu'));
+var body = document.querySelector('body');
+var content = document.querySelector('.content');
 
-function openMenu() {
-  menu.classList.add('open');
+if (menu_is_open) {
+  body.classList.add('hidden-body');
+  content.classList.add('with-shadow');
 }

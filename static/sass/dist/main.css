@@ -1,9 +1,9 @@
-.container {
+.section {
   width: 70%;
   margin: 20px auto;
   max-width: 1300px;
 }
-.container .block {
+.section .block {
   display: flex;
   width: 100%;
   min-height: 200px;
@@ -13,80 +13,80 @@
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
-.container .block a {
+.section .block a {
   width: 100%;
   padding: 30px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.container .block a .block__text {
+.section .block a .block__text {
   margin-left: 20px;
   width: 80%;
 }
 @media screen and (max-width: 1024px) {
-  .container .block a .block__text {
+  .section .block a .block__text {
     width: 70%;
   }
 }
 @media screen and (max-width: 800px) {
-  .container .block a .block__text {
+  .section .block a .block__text {
     font-size: 0.7em;
   }
 }
-.container .block a .block__text p {
+.section .block a .block__text p {
   margin-top: 20px;
 }
-.container .block a img {
+.section .block a img {
   width: 20%;
   max-width: 350px;
   border-radius: 10px;
 }
 @media screen and (max-width: 1024px) {
-  .container .block a img {
+  .section .block a img {
     width: 40%;
   }
 }
 @media screen and (max-width: 800px) {
-  .container .block a {
+  .section .block a {
     padding: 20px;
   }
-  .container .block a img {
+  .section .block a img {
     max-height: 150px;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .block a {
+  .section .block a {
     flex-direction: column;
     padding: 20px;
     margin-top: 0;
   }
-  .container .block a img {
+  .section .block a img {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-.container .block:hover {
+.section .block:hover {
   box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
 }
 @media screen and (max-width: 500px) {
-  .container {
+  .section {
     width: 90%;
   }
-  .container .block {
+  .section .block {
     box-shadow: none;
     margin-bottom: 15px;
   }
-  .container .block a {
+  .section .block a {
     justify-content: center;
   }
-  .container .block a .block__text {
+  .section .block a .block__text {
     width: 100%;
     font-size: 0.8em;
     margin-left: 0;
   }
-  .container .block a img {
+  .section .block a img {
     max-height: 200px;
   }
 }
