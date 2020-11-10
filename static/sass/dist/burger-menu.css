@@ -183,5 +183,7 @@
 @media(max-width: 800px) {
     .container {
         display: block;
+        width: 80%;
+        margin: auto;
     }
 }
