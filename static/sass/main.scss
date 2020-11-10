@@ -1,0 +1,102 @@
+.container{
+    width: 70%;
+    margin: 20px auto;
+    max-width: 1300px;
+
+    .block {
+        display: flex;
+        width: 100%;
+        min-height: 200px;
+        background: #d9d9d9;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 4px 7px 10px rgba($color: #000000, $alpha: 0.2);
+        margin-bottom: 30px;
+
+        a {
+            width: 100%;
+            padding: 30px 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .block__text{
+                margin-left: 20px;
+                width: 80%;
+
+                @media screen and (max-width: 1024px){
+                    width: 70%;
+                }
+
+                @media screen and (max-width: 800px){
+                    font-size: 0.7em;
+                }
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+
+            img {
+                width: 20%;
+                max-width: 350px;
+                border-radius: 10px;
+
+                @media screen and (max-width: 1024px){
+                    width: 40%;
+                }
+            }
+            
+            @media screen and (max-width: 800px) {
+                padding: 20px;
+
+                img {
+                    max-height: 150px;
+                }
+            }
+
+            @media screen and (max-width: 500px){
+                flex-direction: column;
+                padding: 20px;
+                margin-top: 0;
+
+                img {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }  
+    }   
+
+    .block:hover{
+        box-shadow: 5px 8px 20px rgba($color: #000000, $alpha: 0.3);
+        transition: 0.2s;
+    }
+
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+
+        .block {
+            box-shadow: none;
+            margin-bottom: 15px;
+
+            a {
+                justify-content: center;
+
+                .block__text {
+                    width: 100%;
+                    font-size: 0.8em;
+                    margin-left: 0;
+
+                
+                }
+
+                img {
+                    max-height: 200px;
+                }
+            }
+        }
+        
+    }
+}

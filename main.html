@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="static/sass/dist/header.css">
+    <link rel="stylesheet" href="static/sass/dist/main.css">
+    <link rel="stylesheet" href="static/sass/dist/for_all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="main.html"><h1>Website by Yan</h1></a>
+        </div>
+        <nav>
+            <a href="main.html" class="nav__link">Главная</a>
+            <a href="stepByStep.html" class="nav__link central_link">Шаг за шагом</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
+        </nav>
+
+        <div class="menu__burger open-menu" onclick="openMenu()">
+            &#9776;
+        </div>
+
+        <div class="navigation">
+            <a href="main.html" class="nav__link">Главная</a>
+            <a href="stepByStep.html" class="nav__link central">Шаг за шагом</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="block">
+            <a href="posts/post1.html">
+                <img src="static/img/developer (1).jpg" alt="" />
+                <div class="block__text">
+                    <h2>Шаг в шаг 2: Пишем метод find</h2>
+                    <p>
+                        Для поиска подстроки в строке в Python применяется метод find(), который возвращает индекс первого вхождения подстроки в строку и имеет три формы...
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="block">
+            <a href="posts/post2.html">
+                <img src="static/img/developer (1).jpg" alt="" />
+                <div class="block__text">
+                    <h2>Шаг в шаг 1: Анонс проекта</h2>
+                    <p>
+                        Для поиска подстроки в строке в Python применяется метод find(), который возвращает индекс первого вхождения подстроки в строку и имеет три формы...
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="block">
+            <a href="posts/post3.html">
+                <img src="static/img/developer (1).jpg" alt="" />
+                <div class="block__text">
+                    <h2>Первый пост</h2>
+                    <p>
+                        Здраствуйте, объвляю начало запуска своего первого проекта - BadgerDB.
+                        BadgerDB - модуль, являющийся улучшенной версией встроенного модуля JSON в нашем с вами любимом Python...
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--Скрипты-->
+    <!--<script src="static/js/dist/openMenu.dev.js"></script>-->
+    <script src="static/js/dist/closeMenu.dev.js"></script>
+</body>
+</html>
