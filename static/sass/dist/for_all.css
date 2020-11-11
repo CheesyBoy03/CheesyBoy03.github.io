@@ -3,6 +3,7 @@
   padding: 0;
   color: #272727;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
