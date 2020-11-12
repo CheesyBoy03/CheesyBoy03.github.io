@@ -6,6 +6,7 @@
 .section .block {
   display: flex;
   width: 100%;
+  flex-direction: column;
   min-height: 200px;
   background: #d9d9d9;
   border-radius: 15px;
